@@ -1,0 +1,53 @@
+footer{
+    background-color: #282828ff;
+    padding: 0 20px 30px 30px;
+}
+
+.footer_container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer_logo {
+    height: 150px;
+}
+
+.footer_stores{
+    padding-bottom: 40px;
+}
+
+.footer_store{
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin: 0px 0px 12px 0px;
+}
+
+.store_name {
+    margin: 0px 0px 4px 0px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.privacy {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    margin: 0px 0px 40px 0px;
+}
+
+.privacy a {
+    text-decoration: none;
+}
+
+.privacy a li {
+    color: white;
+}
+
+small {
+    color: white;
+    letter-spacing: 0.03em;
+}
