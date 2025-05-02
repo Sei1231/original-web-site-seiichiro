@@ -1,217 +1,219 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>株式会社Social Boost</title>
-        <link rel="icon" href="./favicon.ico/favicon.ico" />
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/header.css" />
-        <link rel="stylesheet" href="./assets/css/footer.css" />
-        <link rel="stylesheet" href="./assets/css/@.css">
-    </head>
-    <body>
-        <header>
-            <div class="header-left">
-                <img
-                    src="./assets/img/logo-removebg-preview.png"
-                    alt=""
-                    class="logo"
-                />
-            </div>
-            <div class="header-right">
-                <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Recruit</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <!-- ⬇️⬇️ -->
-        <main>
-            <div class="main_container">
-                <img class="background" src="./assets/img/ hello.webp" alt="" />
-            </div>
-        </main>
-        <div class="business">
-            <h1 class="business_title">Service</h1>
-            <div class="business_container">
-                <div class="business_item">
-                    <a href="#"><img src="./assets/img/2.png" alt="img" /></a>
-                    <img
-                        class="sub_img"
-                        src="./assets/img/Instagram.webp"
-                        alt=""
-                    />
-                    <h2 class="sub_title">Instagram運用をすべて丸投げ。</h2>
-                    <p class="text_title">
-                        企業のInstagram公式アカウントの戦略設計からクリエイティブ制作、投稿管理、分析まで、一貫したアカウント運用支援を提供します。
-                    </p>
-                    <button class="business_view">View ⇨</button>
-                </div>
-                <div class="business_item">
-                    <a href="#"><img src="./assets/img/3.png" alt="img" /></a>
-                    <img
-                        class="sub_img"
-                        src="./assets/img/tiktok.webp"
-                        alt=""
-                    />
-                    <h2 class="sub_title">TikTok運用はすべてお任せ。</h2>
-                    <p class="text_title">
-                        企業のTikTok公式アカウントの戦略設計からクリエイティブ制作、管理画面、分析まで、一貫したアカウント運用支援を提供します。
-                    </p>
-                    <button class="business_view">View ⇨</button>
-                </div>
-                <div class="business_item">
-                    <a href="#"><img src="./assets/img/4.png" alt="img" /></a>
-                    <img class="sub_img" src="./assets/img/inf.png" alt="" />
-                    <h2 class="sub_title">
-                        インフルエンサーの力でビジネスに勢いを。
-                    </h2>
-                    <p class="text_title">
-                        認知から獲得まで、戦略設計からインフルエンサー選定、案件管理、広告配信、分析まで、一貫したインフルエンサーマーケティングを提供します。
-                    </p>
-                    <button class="business_view">View ⇨</button>
-                </div>
-                <div class="business_item">
-                    <a href="#"
-                        ><img src="./assets/img/youtube.png" alt="img"
-                    /></a>
-                    <img
-                        class="sub_img"
-                        src="./assets/img/Youtube.webp"
-                        alt=""
-                    />
-                    <h2 class="sub_title">
-                        YouTubeアカウント運用はすべてお任せ。
-                    </h2>
-                    <p class="text_title">
-                        企業のYouTube公式アカウントの戦略設計からクリエイティブ制作、投稿管理、分析まで、一貫したアカウント運用支援を提供します。
-                    </p>
-                    <button class="business_view">View ⇨</button>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>株式会社Social Boost</title>
+    <link rel="icon" href="./favicon.ico/favicon.ico" />
+    <!-- common -->
+    <link rel="stylesheet" href="./assets/css/foundation/reset.css" />
+    <link rel="stylesheet" href="./assets/css/foundation/mixin.css" />
+    <link rel="stylesheet" href="./assets/css/components/header.css" />
+    <link rel="stylesheet" href="./assets/css/components/footer.css" />
+
+    <!-- page -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/tiktok.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo-link">
+        <img
+          src="./assets/img/logo-removebg-preview.png"
+          alt="ロゴ"
+          class="logo"
+        />
+      </a>
+
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li><a href="#business">事業紹介</a></li>
+          <li><a href="#news">ニュース</a></li>
+          <li><a href="#recruit">採用情報</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="drawer" id="drawer">
+        <ul class="drawer-list">
+          <li><a href="#business">事業紹介</a></li>
+          <li><a href="#news">ニュース</a></li>
+          <li><a href="#recruit">採用情報</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ⬇️⬇️ -->
+    <main>
+      <div class="main_container">
+        <img class="background" src="./assets/img/ hello.webp" alt="" />
+      </div>
+    </main>
+    <div class="business">
+      <h1 class="business_title">Service</h1>
+      <div class="business_container">
+        <div class="business_item">
+          <a href="#"><img src="./assets/img/2.png" alt="img" /></a>
+          <img class="sub_img" src="./assets/img/Instagram.webp" alt="" />
+          <h2 class="sub_title">Instagram運用をすべて丸投げ。</h2>
+          <p class="text_title">
+            企業のInstagram公式アカウントの戦略設計からクリエイティブ制作、投稿管理、分析まで、一貫したアカウント運用支援を提供します。
+          </p>
+          <a href="./instagram.html"
+            ><button class="business_view">View ⇨</button></a
+          >
         </div>
+        <div class="business_item">
+          <a href="#"><img src="./assets/img/3.png" alt="img" /></a>
+          <img class="sub_img" src="./assets/img/tiktok.webp" alt="" />
+          <h2 class="sub_title">TikTok運用はすべてお任せ。</h2>
+          <p class="text_title">
+            企業のTikTok公式アカウントの戦略設計からクリエイティブ制作、管理画面、分析まで、一貫したアカウント運用支援を提供します。
+          </p>
+          <a href="tiktok.html"><button class="business_view">View ⇨</button></a>
+        </div>
+        <div class="business_item">
+          <a href="#"><img src="./assets/img/4.png" alt="img" /></a>
+          <img class="sub_img" src="./assets/img/inf.png" alt="" />
+          <h2 class="sub_title">インフルエンサーの力でビジネスに勢いを。</h2>
+          <p class="text_title">
+            認知から獲得まで、戦略設計からインフルエンサー選定、案件管理、広告配信、分析まで、一貫したインフルエンサーマーケティングを提供します。
+          </p>
+          <button class="business_view">View ⇨</button>
+        </div>
+        <div class="business_item">
+          <a href="#"><img src="./assets/img/youtube.png" alt="img" /></a>
+          <img class="sub_img" src="./assets/img/Youtube.webp" alt="" />
+          <h2 class="sub_title">YouTubeアカウント運用はすべてお任せ。</h2>
+          <p class="text_title">
+            企業のYouTube公式アカウントの戦略設計からクリエイティブ制作、投稿管理、分析まで、一貫したアカウント運用支援を提供します。
+          </p>
+          <button class="business_view">View ⇨</button>
+        </div>
+      </div>
+    </div>
 
-        <!-- newsエリア↓ -->
-        <section class="news">
-            <div class="news_card">
-                <h2 class="news_title">NEWS</h2>
-                <div class="news_lists">
-                    <a href="" class="news_list news-link">
-                        <div class="news_link_meta">
-                            <time datetime="2025-4-10" class="news_link_date"
-                                >2025年4月10日</time
-                            >
-                            <div class="news_link_label">プレスリリース</div>
-                            <h3 class="news_link_title">
-                                株式会社Social
-                                Boost、コーポレートブランドリニューアルのお知らせ
-                            </h3>
-                        </div>
-                    </a>
-                    <a href="" class="news_list news-link">
-                        <div class="news_link_meta">
-                            <time datetime="2025-5-10" class="news_link_date"
-                                >2025年5月10日</time
-                            >
-                            <div class="news_link_label">プレスリリース</div>
-                            <h3 class="news_link_title">
-                                株式会社Social
-                                Boost、プロ伴走型SNSスクール「Socialmama」リリースのお知らせ
-                            </h3>
-                        </div>
-                    </a>
-                    <a href="" class="news_list news-link">
-                        <div class="news_link_meta">
-                            <time datetime="2025-6-10" class="news_link_date"
-                                >2025年6月10日</time
-                            >
-                            <div class="news_link_label">お知らせ</div>
-                            <h3 class="news_link_title">年末休業のお知らせ</h3>
-                        </div>
-                    </a>
-                    <a href="" class="news_list news-link">
-                        <div class="news_link_meta">
-                            <time datetime="2025-7-10" class="news_link_date"
-                                >2025年7月10日</time
-                            >
-                            <div class="news_link_label">お知らせ</div>
-                            <h3 class="news_link_title">
-                                美容系医療プラットフォーム「キューテン」と提携を開始
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="news_link"><a href="">more view</a></div>
+    <!-- newsエリア↓ -->
+    <section class="news">
+      <div class="news_card">
+        <h2 class="news_title">NEWS</h2>
+        <div class="news_lists">
+          <a href="" class="news_list news-link">
+            <div class="news_link_meta">
+              <time datetime="2025-4-10" class="news_link_date"
+                >2025年4月10日</time
+              >
+              <div class="news_link_label">プレスリリース</div>
+              <h3 class="news_link_title">
+                株式会社Social Boost、コーポレートブランドリニューアルのお知らせ
+              </h3>
             </div>
-        </section>
+          </a>
+          <a href="" class="news_list news-link">
+            <div class="news_link_meta">
+              <time datetime="2025-5-10" class="news_link_date"
+                >2025年5月10日</time
+              >
+              <div class="news_link_label">プレスリリース</div>
+              <h3 class="news_link_title">
+                株式会社Social
+                Boost、プロ伴走型SNSスクール「Socialmama」リリースのお知らせ
+              </h3>
+            </div>
+          </a>
+          <a href="" class="news_list news-link">
+            <div class="news_link_meta">
+              <time datetime="2025-6-10" class="news_link_date"
+                >2025年6月10日</time
+              >
+              <div class="news_link_label">お知らせ</div>
+              <h3 class="news_link_title">年末休業のお知らせ</h3>
+            </div>
+          </a>
+          <a href="" class="news_list news-link">
+            <div class="news_link_meta">
+              <time datetime="2025-7-10" class="news_link_date"
+                >2025年7月10日</time
+              >
+              <div class="news_link_label">お知らせ</div>
+              <h3 class="news_link_title">
+                美容系医療プラットフォーム「キューテン」と提携を開始
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div class="news_link"><a href="">more view</a></div>
+      </div>
+    </section>
 
-        <!-- recruitエリア↓ -->
-        <section>
-            <div class="recruit">
-                <div class="recruit_container">
-                    <h2 class="recruit_title">Recruit</h2>
-                    <h3 class="recruit_sub_title">
-                        規格外の挑戦を、<br />最高の仲間と共に。
-                    </h3>
-                    <p class="recruit_text">
-                        私たちは共に戦う仲間を常に募集しています。
-                    </p>
-                    <button class="recruit_button">Join our team →</button>
-                </div>
-            </div>
-        </section>
+    <!-- recruitエリア↓ -->
+    <section>
+      <div class="recruit">
+        <div class="recruit_container">
+          <h2 class="recruit_title">Recruit</h2>
+          <h3 class="recruit_sub_title">
+            規格外の挑戦を、<br />最高の仲間と共に。
+          </h3>
+          <p class="recruit_text">私たちは共に戦う仲間を常に募集しています。</p>
+          <button class="recruit_button">Join our team →</button>
+        </div>
+      </div>
+    </section>
 
-        <!-- Contactエリア↓ -->
-        <section class="contact">
-            <div class="contact_container">
-                <h2 class="contact_title">Contact</h2>
-                <div class="contact_sub_title">
-                    サービスやご協力に関するご相談、採用、取材に関する問い合わせなど、お気軽にご連絡ください。
-                </div>
-                <button class="contact_button">Contact us →</button>
-            </div>
-        </section>
+    <!-- Contactエリア↓ -->
+    <section class="contact">
+      <div class="contact_container">
+        <h2 class="contact_title">Contact</h2>
+        <div class="contact_sub_title">
+          サービスやご協力に関するご相談、採用、取材に関する問い合わせなど、お気軽にご連絡ください。
+        </div>
+        <button class="contact_button">Contact us →</button>
+      </div>
+    </section>
 
-        <!-- footerエリア↓ -->
-        <footer>
-            <div class="footer_container">
-                <img
-                    src="./assets/img/logo-removebg-preview.png"
-                    alt=""
-                    class="footer_logo"
-                />
-                <div class="footer_stores">
-                    <div class="footer_store">
-                        <h3 class="store_name">東京本社</h3>
-                        <p class="sotre_address">
-                            〒111-1111 東京都渋谷区◯◯1-11-1 ◯◯タワー32階|
-                            TEL:03-1111-1111
-                        </p>
-                    </div>
-                    <div class="footer_store">
-                        <h3 class="store_name">大阪支店</h3>
-                        <p class="sotre_address">
-                            〒222-2222 大阪府大阪市◯◯2-22-2 ◯◯タワー42階
-                        </p>
-                    </div>
-                    <div class="footer_store">
-                        <h3 class="store_name">福岡支店</h3>
-                        <p class="sotre_address">
-                            〒333-3333 福岡県福岡市◯◯3-33-3 ◯◯タワー52階
-                        </p>
-                    </div>
-                </div>
-                <ul class="privacy">
-                    <a href=""><li>プライバシーポリシー</li></a>
-                    <a href=""><li>利用規約</li></a>
-                </ul>
-                <small>&copy;SocialBoost INC. 2025</small>
-            </div>
-        </footer>
-    </body>
+    <!-- footerエリア↓ -->
+    <footer>
+      <div class="footer_container">
+        <img
+          src="./assets/img/logo-removebg-preview.png"
+          alt=""
+          class="footer_logo"
+        />
+        <div class="footer_stores">
+          <div class="footer_store">
+            <h3 class="store_name">東京本社</h3>
+            <p class="sotre_address">
+              〒111-1111 東京都渋谷区◯◯1-11-1 ◯◯タワー32階| TEL:03-1111-1111
+            </p>
+          </div>
+          <div class="footer_store">
+            <h3 class="store_name">大阪支店</h3>
+            <p class="sotre_address">
+              〒222-2222 大阪府大阪市◯◯2-22-2 ◯◯タワー42階
+            </p>
+          </div>
+          <div class="footer_store">
+            <h3 class="store_name">福岡支店</h3>
+            <p class="sotre_address">
+              〒333-3333 福岡県福岡市◯◯3-33-3 ◯◯タワー52階
+            </p>
+          </div>
+        </div>
+        <ul class="privacy">
+          <a href=""><li>プライバシーポリシー</li></a>
+          <a href=""><li>利用規約</li></a>
+        </ul>
+        <small>&copy;SocialBoost INC. 2025</small>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

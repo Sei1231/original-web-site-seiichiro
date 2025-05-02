@@ -1,0 +1,154 @@
+.header {
+  width: 100%;
+  background-color: #282828;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 110px;
+  height: auto;
+}
+
+.header-nav {
+  margin-right: 40px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover {
+  background: #fff;
+  color: #282828;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 25px;
+  gap: 5px;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+/* ハンバーガー開いた時 */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ドロワーメニュー */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.4s ease;
+  opacity: 0;
+  z-index: 1050;
+}
+
+.drawer.active {
+  right: 0;
+  opacity: 1;
+}
+
+.drawer.animating {
+  animation: drawerFadeSlide 0.5s forwards;
+}
+
+/* ドロワーが開く時のアニメーション */
+@keyframes drawerFadeSlide {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  50% {
+    right: -30%;
+    opacity: 0.5;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.drawer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.drawer-list li {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.drawer-list li a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.drawer-list li a:hover {
+  background: #fff;
+  color: #282828;
+}
+
+/* モバイル用 */
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 50px;
+  }
+}

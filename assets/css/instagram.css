@@ -1,0 +1,123 @@
+main {
+  padding-top: 102px; /* headerの高さ分、スペースを空ける */
+  background-color: #505b69ff; /* 背景色 */
+  margin: 0 auto;
+  height: auto;
+}
+
+.main_container {
+  position: relative;
+  width: 100%;
+  height: 97vh; /* 画面いっぱいに表示 */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  background-image: url("./assets/img/insta/bgのコピー.png"); /* 背景画像のパス */
+  background-size: cover; /* 画像が全体にカバーされるように調整 */
+  background-position: center; /* 画像が中央に配置されるように調整 */
+  background-repeat: no-repeat; /* 画像が繰り返されないように */
+}
+
+.main_container .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 背景画像のフィットを調整 */
+  z-index: 1; /* 他の要素より後ろに配置 */
+}
+
+.main_title {
+  position: absolute; /* 絶対位置 */
+  top: 35%; /* 中央に配置 */
+  left: 0; /* 左端に揃える */
+  width: 100%; /* 幅を100%にして、親要素全体に広げる */
+  transform: translateY(-50%); /* Y軸方向の中央揃え */
+  font-size: clamp(36px, 8vw, 120px);
+  color: white; /* 文字色（白） */
+  text-align: left; /* 文字を左揃え */
+  padding-left: 20px; /* 左側に少し余白を追加（必要に応じて調整） */
+  z-index: 1; /* 画像の上に表示させる */
+  line-height: 1.2;
+  margin-left: 30px;
+  max-width: 1000px;
+  word-break: break-word;
+}
+
+.main_sub_title{
+  position: absolute; /* 絶対位置 */
+  top: 70%; /* 中央に配置 */
+  left: 0; /* 左端に揃える */
+  width: 70%; /* 幅を100%にして、親要素全体に広げる */
+  transform: translateY(-50%); /* Y軸方向の中央揃え */
+  font-size: 30px; /* 文字サイズ調整 */
+  color: white; /* 文字色（白） */
+  text-align: left; /* 文字を左揃え */
+  padding-left: 20px; /* 左側に少し余白を追加（必要に応じて調整） */
+  z-index: 1; /* 画像の上に表示させる */
+  line-height: 120%;
+  margin-left: 30px;
+  line-height: 130%;
+  letter-spacing: 3px;
+  width: 60vw;
+}
+
+.button_group {
+  position: absolute;
+  top: 88%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+
+.materials_button {
+  background: #4f39ff;
+  border: 2px solid #4f39ff;
+  color: white;
+  align-items: center;
+  padding: 16px 40px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.service_button {
+  background: #4f39ff;
+  border: 2px solid #4f39ff;
+  color: white;
+  align-items: center;
+  padding: 16px 40px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.materials_button:hover {
+  background-color: rgb(219, 85, 183);
+  transform: translateY(-2px);
+}
+
+.service_button:hover {
+  background-color: rgb(49, 173, 103);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .button_group{
+    top: 95%;
+  }
+}
